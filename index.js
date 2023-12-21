@@ -21,7 +21,7 @@ app.get('/',(req,res)=>
 })
 
 app.use('/users',userRouter);
-//app.use('/books',bookRouter);
+app.use('/books',bookRouter);
 
 /**It is for all methods  */
 app.all('*',(req,res)=>
